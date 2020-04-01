@@ -17,5 +17,8 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-
-<router-outlet></router-outlet>
+<re-captcha (resolved)="resolved($event)" 
+                  formControlName="recaptchaReactive" 
+                                siteKey="6Ldxn-UUAAAAAH6j7X_XJCnCmEr4WsS6Q1PNIU0C">  
+      </re-captcha>
+      <router-outlet></router-outlet>

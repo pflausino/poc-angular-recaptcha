@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poc-angular-recaptcha';
+
+  resolved(captchaResponse: string, res) {
+      console.log(`Resolved response token: ${captchaResponse}`);
+ }
 }
+
+       
